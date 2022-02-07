@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Blogger Site</title>
+    <link rel="shortcut icon" href="images/Logo_M.png">
+    <link rel="stylesheet" href="style/main.css">
+
+</head>
+<body>
+<header>
+    <img src="images/Logo_M.png" alt="Innova Logo"  height="80">
+    <h2>Innova</h2>
+    <h3>Blogging about Tech Companies</h3>
+</header>
+
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">Blogger</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="#">Shop</a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Sign Up for Newsletter</h2>
+        <form name="form1" id="form">
+            <br>
+            First Name:<br>
+            <label>
+                <input type="text" name="firstname" placeholder="First Name">
+            </label>
+            <br>
+
+            Last Name:<br>
+            <input type="text" name="lastname" placeholder="Last Name">
+            <br>
+
+            Email:<br>
+            <input type="text" name="email" placeholder="Email">
+            <br>
+
+            <button onclick="nameChecker(firstname); lastChecker(lastname); emailIsValid(email)">Submit</button>
+            <br><br>
+            <button onclick="clearResult()">Cancel</button>
+            <script src="javascript/forms.js"></script>
+
+            <br><br><br><br><br>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Marcelo Mendoza, 2022 |  Terms Of Use  |  Privacy Statement</p>
+</footer>
+</body>
+</html>
